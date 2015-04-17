@@ -4,3 +4,21 @@ This creates a new empty repository which one needs to start tracking commits.
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The repository holds a subset of files contained in the working directory.  The staging area holds files intended 
 to be included included in the repository.  It allows one to aggregate multiple files into a single commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+By only moving some subset of edited files to the staging area one can commit only some changes instead of all.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When you want multiple versions of the file with different features, when you are about to make major changes which
+may break things and may or may not ever become part of the main branch again.
+
+How do the diagrams help you visualize the branch structure?
+one can easily see which changes are included in which branches and which commits are reachable from a given branch.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+All changes on both branches incorporated into one branch.  Changes listed by time stamp in git log.  This can lead
+to commits being listed above a previous commit which is not its parent.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging is a huge timesaver but if an automatic merge made an incorrect decision it could lead to wasted
+time as well.  Better safe than sorry so resolving merge conflicts is a necessary evil.
