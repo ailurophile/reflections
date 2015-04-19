@@ -10,3 +10,7 @@ Fork makes a copy of a repository on GitHub which you might want to do should yo
 changes for the original repository. Clone makes a copy of a repository on your local drive which you would do if you
 wanted the program for your own personal use.  Branch allows one to make changes without affecting the master copy of 
 a program which is good when making major changes which you may or may not want to keep.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+You can easily see when you are getting ahead of your last push as a sort of reminder to update GitHub.  You can also
+see the differences in the files without needing internet access.
